@@ -3,12 +3,12 @@ package com.musicapp;
 public class Song {
         private String title;
         private String artist;
-        private int durationInSec;
+        private int lengthInSec;
 
-        public Song(String title, String artist, int durationInSec) {
+        public Song(String title, String artist, int lengthInSec) {
             this.title = title;
             this.artist = artist;
-            this.durationInSec = durationInSec;
+            this.lengthInSec = lengthInSec;
         }
 
         public String getTitle() {
@@ -19,8 +19,8 @@ public class Song {
             return artist;
         }
 
-        public int getDurationInSec() {
-            return durationInSec;
+        public int getLengthInSec() {
+            return lengthInSec;
         }
 
         @Override
@@ -28,7 +28,7 @@ public class Song {
             return "Song{" +
                     "title='" + title + '\'' +
                     ", artist='" + artist + '\'' +
-                    ", durationInSec=" + durationInSec +
+                    ", durationInSec=" + lengthInSec +
                     '}';
         }
 }
